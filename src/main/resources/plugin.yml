@@ -3,3 +3,8 @@ main: net.fritten.lobbytools.main.LobbyTools
 version: 0.1
 author: Houston9000
 description: Random Collection of useful commands
+
+permissions:
+  lobbytools.fly:
+    description: Player is allowed to fly
+    default: false
