@@ -30,9 +30,9 @@ public class LobbyTools extends JavaPlugin {
 		if (command.getName().equalsIgnoreCase("anchor")) {
 			//add player to anchored list
 		}
-		if (command.getName().equalsIgnoreCase("fly")){
+		//if (command.getName().equalsIgnoreCase("fly")){
 			//lets player fly n stuff...
-		}
+		//}
 		
 		return false; 
 	}
