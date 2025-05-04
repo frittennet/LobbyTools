@@ -1,11 +1,12 @@
-package net.fritten.lobbytools.events;
+package net.fritten.lobbyTools.events;
 
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
-
+import org.bukkit.entity.Player;
+import net.fritten.lobbyTools.LobbyTools;
 
 public class PlayerEventListener implements Listener {
 	
@@ -17,8 +18,10 @@ public class PlayerEventListener implements Listener {
 	
 	@EventHandler
 	public void onPlayerJoinEvent(PlayerJoinEvent event){
-		if(event.getPlayer().hasPermission("lobbytools.fly")){
-			event.getPlayer().setAllowFlight(true);
+		Player player = event.getPlayer();
+		player.teleport(LobbyTools.spawnpoint);
+		if(player.hasPermission("lobbytools.fly")){
+			player.setAllowFlight(true);
 		}
 	}
 }

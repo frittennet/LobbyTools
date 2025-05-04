@@ -1,6 +1,7 @@
 name: LobbyTools
-main: net.fritten.lobbytools.main.LobbyTools
-version: 0.1
+version: '0.2'
+main: net.fritten.lobbyTools.LobbyTools
+api-version: '1.21'
 author: Houston9000
 description: Random Collection of useful commands
 
